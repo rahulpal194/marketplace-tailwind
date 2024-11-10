@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary: #007EDD;
+        --secondary: 115 195 255;
+        --paragraph: 69 79 94;
+        --heading: 32 39 69;
+        --client-font : 'Plus Jakarta Sans',sans-serif;  
+        --itest: 115 41 154;
+        --school: 250 94 1;
+        --ebazaar: 1 190 95;
+        --foodking: 255 0 107;
+        --shopking: 242 62 20;
+        --foodappi: 1 78 73;
+        --foodbank: 238 29 72;
+        --foodscan: 23 114 255;
+        --foodnany: 243 104 5;
+        --quickpass: 0 39 147;
+        --primary-gradient:#73C3FF;
+        --slate :#818B9B
+    }
+    
+    html,body { @apply font-client text-[#323D4E]}
+}
+
+@layer components {
+    /*===============================
+            LAYOUTS PART START        
+    ================================*/
+  .container { @apply w-full max-w-6xl mx-auto px-3 sm:px-4 }
+  .row { @apply flex flex-wrap -m-3 }
+  .col-1 { @apply w-1/6 p-3 }
+  .col-2 { @apply w-1/5 p-3 }
+  .col-3 { @apply w-1/4 p-3 }
+  .col-4 { @apply w-1/3 p-3 }
+  .col-5 { @apply w-2/5 p-3 }
+  .col-6 { @apply w-1/2 p-3 }
+  .col-7 { @apply w-3/5 p-3 }
+  .col-8 { @apply w-2/3 p-3 }
+  .col-9 { @apply w-3/4 p-3 }
+  .col-10 { @apply w-4/5 p-3 }
+  .col-11 { @apply w-5/6 p-3 }
+  .col-12 { @apply w-full p-3 }
+
+
+  .gradient-heading { @apply text-transparent bg-clip-text bg-gradient-to-r from-30% via-45% to-100% from-[#0380DE] via-[#33B794] to-[#6361C5] }
+  
+
+}
