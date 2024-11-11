@@ -10,6 +10,8 @@ module.exports = {
         "primary":"var(--primary)",
         "primaryGradient":"var(--primary-gradient)",
         "slate": "var(--slate)",
+        "danger":"var(--danger)"
+        
       },
       backgroundImage: {
         "hero-assets": "url('/images/assets.png')",
@@ -20,7 +22,9 @@ module.exports = {
    
     boxShadow:{
       product:"0px 8px 32px 0px rgba(0, 126, 221, 0.25)",
-      pricingBtn:"0px 10px 32px 0px rgba(0, 126, 221, 0.25)"
+      pricingBtn:"0px 10px 32px 0px rgba(0, 126, 221, 0.25)",
+      servicetable: "0px 6px 12px 0px rgba(156, 174, 186, 0.10)"
+      
     },
     dropShadow: {
       shopking: "4px 4px 15px rgba(245, 81, 20, 0.40)",
@@ -35,6 +39,12 @@ module.exports = {
       ihostel: "4px 4px 15px rgba(14, 58, 255, 0.40)",
       schoolexpress: "4px 4px 15px rgba(108, 219, 123, 0.40)",
       itest: "4px 4px 15px rgba(92, 115, 249, 0.40)",
+      counter:"0px 8px 32px rgba(55, 106, 139, 0.12)",
+      usericon:"0px 6px 10px 0px rgba(246, 148, 90, 0.33)",
+      smileicon:"0px 6px 10px 0px rgba(74, 204, 107, 0.30)",
+      worldicon:"0px 6px 10px 0px rgba(34, 117, 184, 0.30)",
+      hearticon:"0px 6px 10px 0px rgba(230, 26, 114, 0.30)"
+  
   }
     },
   },

@@ -20,7 +20,8 @@
         --foodnany: 243 104 5;
         --quickpass: 0 39 147;
         --primary-gradient:#73C3FF;
-        --slate :#818B9B
+        --slate :#818B9B;
+        --danger: #F55858;
     }
     
     html,body { @apply font-client text-[#323D4E]}
@@ -30,7 +31,7 @@
     /*===============================
             LAYOUTS PART START        
     ================================*/
-  .container { @apply w-full max-w-6xl mx-auto px-3 sm:px-4 }
+  .container { @apply w-full max-w-[1160px] mx-auto px-3 sm:px-4 }
   .row { @apply flex flex-wrap -m-3 }
   .col-1 { @apply w-1/6 p-3 }
   .col-2 { @apply w-1/5 p-3 }
@@ -47,6 +48,10 @@
 
 
   .gradient-heading { @apply text-transparent bg-clip-text bg-gradient-to-r from-30% via-45% to-100% from-[#0380DE] via-[#33B794] to-[#6361C5] }
-  
-
+  .usericon{ @apply text-transparent bg-clip-text bg-gradient-to-b from-[#F6D45A] to-[#F6945A] }
+  .smileicon{ @apply text-transparent bg-clip-text bg-gradient-to-b from-[#4CCD68] to-[#22B08E] }
+  .hearticon{ @apply text-transparent bg-clip-text bg-gradient-to-b from-[#F492BC] to-[#E4156F] }
+  .worldicon{ @apply text-transparent bg-clip-text bg-gradient-to-b from-[#86C3F3] to-[#186DB1] }
+  table td , th{@apply px-4 sm:px-6 py-6 sm:py-8 text-center}
+  table tr td:first-child{@apply text-left}
 }

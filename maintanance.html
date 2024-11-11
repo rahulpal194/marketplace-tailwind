@@ -1,0 +1,629 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/typography/PlusJakartaSans/PlusJakartaSans.css">
+  <link rel="stylesheet" href="./fonts/iconly/iconly.css">
+  
+  <script defer src="./lib/counter/jquery.min.js"></script>
+  <script defer src="./lib/counter/jQuerySimpleCounter.js"></script>
+  <script src="./js/script.js"></script>
+  <title>Maintanance</title>
+</head>
+<body>
+    <span class="absolute top-0 -z-10 w-full h-screen bg-herobg bg-no-repeat bg-cover"></span>
+    
+    <!--====================================
+                HERO PART START   
+    =====================================-->
+    <section class="mt-12 sm:mt-20 pt-20 mb-24 md:mb-40 bg-hero-assets bg-no-repeat bg-contain">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-8">
+                <div>
+                    <h1 class="text-[32px] sm:text-[42px] font-medium mb-6 leading-tight md:text-left text-center">
+                        Reliable 
+                        <span class="gradient-heading font-bold leading-tight">Maintenance Service</span>
+                        for Committed  Owners
+                    </h1>
+                    <p class="text-base font-normal sm:text-lg mb-8 md:text-left text-center">Trust us to manage every detail with exceptional care. Let us take care of your system’s health, so you can stay focused on what matters—growing your business.</p>
+                    <div class="md:hidden block mb-8">
+                        <img class="w-full h-full" src="./images/maintanance/hero.png" alt="hero">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
+                        <div class="flex gap-6 items-center">
+                            <div>
+                                <div class="w-16 h-16 rounded-full bg-white drop-shadow-counter flex justify-center items-center"><i class="lab-fill-users text-3xl usericon drop-shadow-usericon"></i></div>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-extrabold text-[#FD7E34]"><span class="counterup">20</span>+</h3>
+                                <p class="text-base font-normal">In a team that works for you</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center">
+                            <div>
+                                <div class="w-16 h-16 rounded-full bg-white drop-shadow-counter flex justify-center items-center"><i class="lab-fill-smile text-3xl smileicon drop-shadow-smileicon"></i></div>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-extrabold text-[#22B08E]"><span class="counterup">6500</span>+</h3>
+                                <p class="text-base font-normal">Active companies we are serving</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center">
+                            <div>
+                                <div class="w-16 h-16 rounded-full bg-white drop-shadow-counter flex justify-center items-center"><i class="lab-heart-circle text-3xl hearticon drop-shadow-hearticon"></i></div>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-extrabold text-[#E4156F]"><span class="counterup">90</span>%</h3>
+                                <p class="text-base font-normal">Client Satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center">
+                            <div>
+                                <div class="w-16 h-16 rounded-full bg-white drop-shadow-counter flex justify-center items-center"><i class="lab-fill-world text-3xl worldicon drop-shadow-worldicon"></i></div>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-extrabold text-[#186DB1]"><span class="counterup">20</span>+</h3>
+                                <p class="text-base font-normal">Countries Served</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:block hidden">
+                    <img class="w-full h-full" src="./images/maintanance/hero.png" alt="hero">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====================================
+                HERO PART END   
+    =====================================-->
+   
+    <!--====================================
+            SERVICE PLAN PART START   
+    =====================================-->
+    <section class="container">
+        <h3 class="text-3xl sm:text-[42px] font-medium text-center mb-6 sm:mb-8"><span class="gradient-heading font-bold">Affordable Price </span>For All!</h3>
+        <div class="text-center mb-12 sm:mb-16">
+            <div class="flex justify-center items-center flex-wrap gap-4 mb-4">
+                <h3 class="text-[22px] font-client font-semibold text-primary " id="monthly">Monthly</h3>
+                <label for="toggle" class="flex items-center cursor-pointer select-none text-dark dark:text-white">
+                    <div class="relative">
+                        <input type="checkbox" id="toggle" class="peer sr-only hidden" onchange="priceToggle()" />
+                        <div class="block h-8 rounded-full bg-primary w-[57px] peer-checked:bg-secondary"></div>
+                        <div class="absolute flex items-center justify-center w-6 h-6 transition bg-white rounded-full left-1 top-1  peer-checked:translate-x-full "></div>
+                    </div>
+                </label> 
+                <h3 class="text-[22px] font-client font-semibold" id="yearly">Yearly</h3>
+                <p class="text-sm font-client font-medium outline outline-1 outline-primary rounded-2xl px-2 py-1 text-primary">20% off</p>
+            </div>
+            <p class="text-lg font-normal ">(This pricing is for 1 product)</p>
+         </div> 
+         <div class="rounded-3xl shadow-servicetable mb-6 overflow-x-auto lg:overflow-x-visible whitespace-nowrap month">
+            <table class="w-full text-left ">
+                <thead class="border-b border-[#E7EAE]">
+                    <tr>
+                        <th class="align-bottom text-2xl sm:text-[32px] font-bold text-left">Services in Package</th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-primary text-lg sm:text-2xl font-bold mb-4">Bronze</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-primary text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-[#1DB8AA] text-lg sm:text-2xl font-bold mb-4">Silver</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-[#1DB8AA] text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-[#FF9500] text-lg sm:text-2xl font-bold mb-4">Gold</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-[#FF9500] text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-[#8447FF] text-lg sm:text-2xl font-bold mb-4">Platinum</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-[#8447FF] text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Priority support <i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Priority technical support<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">WhatsApp group live chat<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">01</span>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">02</span>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">03</span>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">05</span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Upcoming release roadmap<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Dedicated support manager<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Up-to-date Postman collection<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Weekly follow-up meetings<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Update - both Admin Panel & Apps<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Branding update<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Immediate system’s bug fixing<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Needful customization<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">6<sup class="text-xs font-medium">hrs</sup></span>                            
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">18<sup class="text-xs font-medium">hrs</sup></span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">App’s new release Publish<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">System up & running responsibility<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rounded-3xl shadow-servicetable mb-6 overflow-x-auto lg:overflow-x-visible whitespace-nowrap year hidden">
+            <table class="w-full text-left ">
+                <thead class="border-b border-[#E7EAE]">
+                    <tr>
+                        <th class="align-bottom text-2xl sm:text-[32px] font-bold text-left">Services in Package</th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-primary text-lg sm:text-2xl font-bold mb-4">Bronze</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-primary text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-[#1DB8AA] text-lg sm:text-2xl font-bold mb-4">Silver</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-[#1DB8AA] text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-[#FF9500] text-lg sm:text-2xl font-bold mb-4">Gold</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-[#FF9500] text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="text-center">
+                                <h3 class="text-[#8447FF] text-lg sm:text-2xl font-bold mb-4">Platinum</h3>
+                                <p class="text-2xl sm:text-[32px] font-bold mb-4 sm:mb-6">$699 <span class="line-through text-sm sm:text-base text-slate">$799</span></p>
+                                <button class="px-8 py-3 rounded-full text-lg font-bold bg-[#8447FF] text-white text-center leading-none">Buy Now</button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Priority support <i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Priority technical support<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">WhatsApp group live chat<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">01</span>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">02</span>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">03</span>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">05</span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Upcoming release roadmap<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Dedicated support manager<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Up-to-date Postman collection<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Weekly follow-up meetings<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Update - both Admin Panel & Apps<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Branding update<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Immediate system’s bug fixing<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">Needful customization<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">6<sup class="text-xs font-medium">hrs</sup></span>                            
+                        </td>
+                        <td>
+                            <span class="text-lg font-bold">18<sup class="text-xs font-medium">hrs</sup></span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-[#E7EAE]">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">App’s new release Publish<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="text-sm sm:text-lg">
+                            <p class="font-medium flex gap-3 items-center">System up & running responsibility<i class="lab-line-info text-base text-slate"></i></p>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-close-circle text-danger text-2xl"></i>
+                        </td>
+                        <td>
+                            <i class="lab-fill-check-circle text-[#31C970] text-2xl"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!--====================================
+            SERVICE PLAN PART END   
+    =====================================-->
+
+</body>
+</html>
