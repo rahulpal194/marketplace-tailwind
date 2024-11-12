@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'small': {'min': '430px', 'max': '639px'}
+    },
       fontFamily:{
        "client": ["var(--client-font)"]
       },
@@ -16,14 +19,17 @@ module.exports = {
       backgroundImage: {
         "hero-assets": "url('/images/assets.png')",
         "herobg": "url('/images/bg.jpg')",
+        "customizationbg":"url('/images/customization/customization_bg.png')",
         'pricingcard': 'linear-gradient(to bottom, #F0F9FF, #FFFFFF)',
         'pricingBtn':'linear-gradient(to left, #73C3FF 0%, #007EDD 100%)'
     },
    
     boxShadow:{
       product:"0px 8px 32px 0px rgba(0, 126, 221, 0.25)",
-      pricingBtn:"0px 10px 32px 0px rgba(0, 126, 221, 0.25)",
-      servicetable: "0px 6px 12px 0px rgba(156, 174, 186, 0.10)"
+      primarybtn:"0px 10px 32px 0px rgba(0, 126, 221, 0.25)",
+      paper: "0px 6px 12px 0px rgba(156, 174, 186, 0.10)",
+      whatsapp:"0px 10px 32px 0px rgba(37, 211, 102, 0.25)",
+      card: "4px 4px 32px 0px rgba(156, 174, 186, 0.12)"
       
     },
     dropShadow: {
@@ -43,8 +49,7 @@ module.exports = {
       usericon:"0px 6px 10px 0px rgba(246, 148, 90, 0.33)",
       smileicon:"0px 6px 10px 0px rgba(74, 204, 107, 0.30)",
       worldicon:"0px 6px 10px 0px rgba(34, 117, 184, 0.30)",
-      hearticon:"0px 6px 10px 0px rgba(230, 26, 114, 0.30)"
-  
+      hearticon:"0px 6px 10px 0px rgba(230, 26, 114, 0.30)",
   }
     },
   },

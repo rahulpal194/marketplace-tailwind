@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1731315531184");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1731315531184") format("woff2"), url("./iconly.woff?1731315531184") format("woff"), url("./iconly.ttf?1731315531184") format("truetype"), url("./iconly.svg?1731315531184#Iconly") format("svg");
+  src: url("./iconly.eot?1731395207128");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1731395207128") format("woff2"), url("./iconly.woff?1731395207128") format("woff"), url("./iconly.ttf?1731395207128") format("truetype"), url("./iconly.svg?1731395207128#Iconly") format("svg");
 }
 
 [class="lab"], [class^="lab-"], [class*=" lab-"] {
@@ -73,4 +73,8 @@
 
 .lab-line-info:before {
   content: "\e00c";
+}
+
+.lab-line-whatsapp:before {
+  content: "\e00d";
 }
