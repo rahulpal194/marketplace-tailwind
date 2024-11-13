@@ -879,6 +879,18 @@ table tr td:first-child {
   z-index: -10;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -932,8 +944,8 @@ table tr td:first-child {
   margin-bottom: 3rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-24 {
@@ -962,10 +974,6 @@ table tr td:first-child {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .box-border {
@@ -1503,10 +1511,6 @@ table tr td:first-child {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1699,12 +1703,17 @@ table tr td:first-child {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .gap-x-24 {
@@ -1717,13 +1726,16 @@ table tr td:first-child {
        column-gap: 1.5rem;
 }
 
-.gap-x-\[85px\] {
-  -moz-column-gap: 85px;
-       column-gap: 85px;
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2404,11 +2416,6 @@ table tr td:first-child {
   padding-right: 0.375rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2444,11 +2451,6 @@ table tr td:first-child {
   padding-bottom: 0.375rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2467,6 +2469,11 @@ table tr td:first-child {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pt-20 {
@@ -3401,6 +3408,10 @@ table tr td:first-child {
     margin-bottom: 5rem;
   }
 
+  .sm\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
   .sm\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -3423,6 +3434,11 @@ table tr td:first-child {
 
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .sm\:text-2xl {
@@ -3454,6 +3470,30 @@ table tr td:first-child {
 }
 
 @media (min-width: 768px) {
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-3 {
+    order: 3;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:mb-40 {
     margin-bottom: 10rem;
   }
@@ -3464,6 +3504,10 @@ table tr td:first-child {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:grid-cols-2 {
@@ -3490,12 +3534,37 @@ table tr td:first-child {
     justify-content: flex-end;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:gap-x-\[85px\] {
+    -moz-column-gap: 85px;
+         column-gap: 85px;
+  }
+
   .md\:bg-cover {
     background-size: cover;
   }
 
   .md\:text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:whitespace-nowrap {
+    white-space: nowrap;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
