@@ -629,15 +629,15 @@ html,body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1160px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  max-width: 1166px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -738,35 +738,6 @@ table td , th {
 table tr td:first-child {
   text-align: left;
 }
-
-/* .inner {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.dot {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: red;
-    border-radius: 100%;
-    animation: orbit 5s linear infinite;
-}
-
-@keyframes orbit {
-    from {
-        transform: rotate(0deg) translateX(100px); 
-    }
-    to {
-        transform: rotate(360deg) translateX(100px); 
-    }
-} */
 
 .sr-only {
   position: absolute;
@@ -1726,16 +1697,16 @@ table tr td:first-child {
        column-gap: 1.5rem;
 }
 
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .gap-y-6 {
   row-gap: 1.5rem;
 }
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.gap-y-12 {
-  row-gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3294,15 +3265,15 @@ table tr td:first-child {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1160px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    max-width: 1166px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   @media (min-width: 640px) {
     .sm\:container {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
     }
   }
 
@@ -3498,6 +3469,10 @@ table tr td:first-child {
     margin-bottom: 10rem;
   }
 
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3543,10 +3518,6 @@ table tr td:first-child {
          column-gap: 85px;
   }
 
-  .md\:bg-cover {
-    background-size: cover;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -3555,6 +3526,10 @@ table tr td:first-child {
 @media (min-width: 1024px) {
   .lg\:whitespace-nowrap {
     white-space: nowrap;
+  }
+
+  .lg\:bg-cover {
+    background-size: cover;
   }
 
   .lg\:px-16 {
