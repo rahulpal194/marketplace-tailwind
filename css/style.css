@@ -653,6 +653,21 @@ html,body {
   flex-wrap: wrap;
 }
 
+.col-5 {
+  width: 40%;
+  padding: 0.75rem;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0.75rem;
+}
+
+.col-7 {
+  width: 60%;
+  padding: 0.75rem;
+}
+
 .col-12 {
   width: 100%;
   padding: 0.75rem;
@@ -1482,6 +1497,14 @@ table tr td:first-child {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1707,6 +1730,16 @@ table tr td:first-child {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3298,6 +3331,16 @@ table tr td:first-child {
 @media (min-width: 1024px) {
   .lg\:col-3 {
     width: 25%;
+    padding: 0.75rem;
+  }
+
+  .lg\:col-5 {
+    width: 40%;
+    padding: 0.75rem;
+  }
+
+  .lg\:col-7 {
+    width: 60%;
     padding: 0.75rem;
   }
 }
